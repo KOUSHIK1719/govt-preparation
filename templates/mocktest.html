@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mock Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1 style="text-align:center;">Government Exam Mock Test</h1>
+
+<form action="/submit-test" method="POST">
+
+<div class="question-card">
+    <h3>1. Capital of India?</h3>
+
+    <input type="radio" name="q1" value="Delhi"> Delhi<br>
+    <input type="radio" name="q1" value="Mumbai"> Mumbai<br>
+    <input type="radio" name="q1" value="Chennai"> Chennai<br>
+</div>
+
+<div class="question-card">
+    <h3>2. 25% of 200?</h3>
+
+    <input type="radio" name="q2" value="25"> 25<br>
+    <input type="radio" name="q2" value="50"> 50<br>
+    <input type="radio" name="q2" value="100"> 100<br>
+</div>
+
+<div class="question-card">
+    <h3>3. Father of Indian Constitution?</h3>
+
+    <input type="radio" name="q3" value="Dr B R Ambedkar"> Dr B R Ambedkar<br>
+    <input type="radio" name="q3" value="Mahatma Gandhi"> Mahatma Gandhi<br>
+    <input type="radio" name="q3" value="Nehru"> Nehru<br>
+</div>
+
+<br>
+
+<center>
+<button type="submit">
+Submit Test
+</button>
+</center>
+
+</form>
+
+</body>
+</html>

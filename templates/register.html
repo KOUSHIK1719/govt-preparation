@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Student Register</h2>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <select name="exam" required>
+            <option value="">Select Exam</option>
+            <option>UPSC</option>
+            <option>SSC</option>
+            <option>Banking</option>
+            <option>Railways</option>
+            <option>State PSC</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have account? <a href="/login">Login</a></p>
+</div>
+
+</body>
+</html>

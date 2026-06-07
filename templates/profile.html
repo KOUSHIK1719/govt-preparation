@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="top-nav">
+
+
+    <div>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/mock-tests">Mock Tests</a>
+        <a href="/results">Results</a>
+        <a href="/study-materials">Study Materials</a>
+        <a href="/current-affairs">Current Affairs</a>
+        <a href="/logout" class="logout">Logout</a>
+    </div>
+</nav>
+
+<div class="dashboard-container">
+
+    <h1>Student Profile</h1>
+
+    <div class="profile-card">
+
+        <h2>{{ session['name'] }}</h2>
+
+        <p><strong>Email:</strong> {{ session['email'] }}</p>
+
+        <p><strong>Target Exam:</strong> {{ session['exam'] }}</p>
+
+        <p><strong>Account Status:</strong> Active</p>
+
+        <p><strong>Study Progress:</strong> 65%</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

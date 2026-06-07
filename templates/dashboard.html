@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="top-nav">
+    <div>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/mock-tests">Mock Tests</a>
+        <a href="/results">Results</a>
+        <a href="/study-materials">Materials</a>
+        <a href="/current-affairs">Current Affairs</a>
+        <a href="/profile">Profile</a>
+        <a href="/logout" class="logout">Logout</a>
+    </div>
+</nav>
+
+<section class="dashboard-hero">
+    <div>
+        <h1>Welcome, {{ session['name'] }}</h1>
+        <p>Prepare smarter for your {{ session['exam'] }} exam with Remuse Development.</p>
+        <a href="/mock-tests" class="hero-btn">Start Mock Test</a>
+    </div>
+</section>
+
+<section class="dashboard-container">
+
+    <div class="stats">
+        <div class="stat-card">
+            <h3>Target Exam</h3>
+            <p>{{ session['exam'] }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Mock Tests</h3>
+            <p>12 Available</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Study Progress</h3>
+            <p>65%</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Current Affairs</h3>
+            <p>Daily Updated</p>
+        </div>
+    </div>
+
+    <h2>Quick Access</h2>
+
+    <div class="feature-grid">
+        <a href="/mock-tests" class="feature-card">
+            <h3>📝 Mock Tests</h3>
+            <p>Practice exam-level questions with instant results.</p>
+        </a>
+
+        <a href="/results" class="feature-card">
+            <h3>📊 Results</h3>
+            <p>Check your test score and performance history.</p>
+        </a>
+
+        <a href="/study-materials" class="feature-card">
+            <h3>📚 Study Materials</h3>
+            <p>Access notes, formulas and subject-wise content.</p>
+        </a>
+
+        <a href="/current-affairs" class="feature-card">
+            <h3>📰 Current Affairs</h3>
+            <p>Read daily important updates for exams.</p>
+        </a>
+
+        <a href="/profile" class="feature-card">
+            <h3>👤 Profile</h3>
+            <p>View your student details and target exam.</p>
+        </a>
+    </div>
+
+</section>
+
+</body>
+</html>

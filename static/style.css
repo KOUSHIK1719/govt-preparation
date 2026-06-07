@@ -1,0 +1,266 @@
+/* Login Background */
+
+.login-page{
+    margin:0;
+    padding:0;
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Login Box */
+
+.login-box{
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+
+    text-align:center;
+}
+
+.login-box h1{
+    color:#003b8e;
+    margin-bottom:10px;
+}
+
+.login-box h2{
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+
+    background:#003b8e;
+    color:white;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:16px;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#002766;
+}
+
+.login-box a{
+    color:#003b8e;
+    text-decoration:none;
+    font-weight:bold;
+}
+.top-nav {
+    background: #002b6b;
+    color: white;
+    padding: 18px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav h2 {
+    letter-spacing: 2px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+.logout {
+    background: #ffcc00;
+    color: #002b6b !important;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.dashboard-hero {
+    background: linear-gradient(rgba(0,43,107,0.85), rgba(0,43,107,0.85)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 50px;
+}
+
+.dashboard-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.dashboard-hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background: #ffcc00;
+    color: #002b6b;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.dashboard-container {
+    padding: 45px;
+    background: #f4f7fb;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #002b6b;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashboard-container h2 {
+    color: #002b6b;
+    margin-bottom: 25px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #102a43;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: #eef5ff;
+}
+
+.feature-card h3 {
+    color: #002b6b;
+    margin-bottom: 12px;
+}
+
+@media(max-width: 900px) {
+    .top-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stats,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.profile-card{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.profile-card h2{
+    color:#002b6b;
+    margin-bottom:20px;
+}
+
+.profile-card p{
+    font-size:18px;
+    margin:15px 0;
+}
+.test-box {
+    max-width: 800px;
+    margin: auto;
+}
+
+.question-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.question-card p {
+    color: #002b6b;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.question-card label {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.submit-test-btn {
+    max-width: 250px;
+    margin: 20px auto;
+    display: block;
+}
+.result-btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 20px;
+    background:#003b8e;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.result-btn:hover{
+    background:#002766;
+}

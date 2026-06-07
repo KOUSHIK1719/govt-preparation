@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mock Test Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <div class="profile-card">
+
+        <h1>Mock Test Result</h1>
+
+        <h2>Your Score: {{ score }}/3</h2>
+
+        {% if score == 3 %}
+            <h3>Excellent 🎉</h3>
+
+        {% elif score == 2 %}
+            <h3>Good Job 👍</h3>
+
+        {% else %}
+            <h3>Keep Practicing 📚</h3>
+
+        {% endif %}
+
+        <br><br>
+
+<a href="/dashboard" class="result-btn">
+    Home
+</a>
+
+<a href="/mock-tests" class="result-btn">
+    Take Test Again
+</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
